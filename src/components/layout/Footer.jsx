@@ -50,7 +50,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <Phone size={24} className="mt-0.5 shrink-0 opacity-80 hover:opacity-100 transition-opacity" />
-                <span>WhatsApp: +54 9 11 0000-0000</span>
+                <span>WhatsApp: +54 9 11 3145-7280</span>
               </li>
               <li className="flex items-start space-x-3">
                 <Mail size={24} className="mt-0.5 shrink-0 opacity-80 hover:opacity-100 transition-opacity" />
