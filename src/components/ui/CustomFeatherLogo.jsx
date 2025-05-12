@@ -3,9 +3,9 @@ import React from 'react';
 const CustomFeatherLogo = ({ size = 40, className = "" }) => {
   return (
     <img
-      src="/2781343.svg"
+      src="/feather.png"
       alt="Custom Feather Logo"
-      width="25"
+      width="35"
       className={className}
       aria-label="Custom Feather Logo"
     />
