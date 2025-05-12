@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <div
       className="relative hero-pattern bg-hero-pattern bg-no-repeat"
-      style={{ backgroundSize: '100%', backgroundPosition: 'center center', minHeight: '700px' }}
+      style={{ backgroundSize: 'cover', backgroundPosition: 'center center', minHeight: '700px' }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60 z-10"></div>
