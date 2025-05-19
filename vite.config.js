@@ -10,9 +10,8 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-    mode === 'development' &&
-    componentTagger(),
-  ].filter(Boolean),
+    // Removed undefined componentTagger plugin to fix error
+  ],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
