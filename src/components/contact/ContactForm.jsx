@@ -10,6 +10,8 @@ const ContactForm = () => {
     message: "",
   });
 
+  const [messageSent, setMessageSent] = useState(false);
+
   const handleChange = (e) => {
     setFormData((prev) => ({
       ...prev,
@@ -21,11 +23,21 @@ const ContactForm = () => {
     e.preventDefault();
     // Handle form submission logic here
     console.log(formData);
+    setMessageSent(true);
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
   };
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
-      
+      {messageSent && (
+        <div className="text-green-600 font-semibold">
+          Mensaje enviado
+        </div>
+      )}
       <div className="relative">
         <input
           type="text"
